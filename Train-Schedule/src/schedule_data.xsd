@@ -1,0 +1,47 @@
+<?xml version = "1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+	<!-- Definition of simple elements -->
+	<xs:element name = "train" type = "xs:string"/>
+	<xs:element name = "start_station" type = "xs:string"/>
+	<xs:element name = "end_station" type = "xs:string"/>
+	<xs:element name = "depart_time" type = "xs:dateTime"/>
+	<xs:element name = "travel_time" type = "xs:duration"/>
+
+	<!-- Definition of complex elements -->
+	<xs:element name = "route">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref = "start_station"/>
+				<xs:element ref = "end_station"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name = "schedule">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref = "train"/>
+				<xs:element ref = "route"/>
+				<xs:element ref = "depart_time"/>
+				<xs:element ref = "travel_time"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name = "schedules">
+		<xs:complexType>
+			<xs:sequence minOccurs = "0" maxOccurs = "unbounded">
+				<xs:element ref = "schedule"/>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name = "uniqueSchedules">
+			<xs:selector xpath = "schedule"/>
+			<xs:field xpath = "train"/>
+			<xs:field xpath = "route/start_station"/>
+			<xs:field xpath = "route/end_station"/>
+			<xs:field xpath = "depart_time"/>
+			<xs:field xpath = "travel_time"/>
+		</xs:unique>
+	</xs:element>
+
+</xs:schema>

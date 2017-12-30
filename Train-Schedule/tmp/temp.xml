@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schedules>
+	<schedule>
+		<train>065E</train>
+		<route>
+			<start_station>A</start_station>
+			<end_station>B</end_station>
+		</route>
+		<depart_time>2017-12-12T12:00:00</depart_time>
+		<travel_time>P1D</travel_time>
+	</schedule>
+	<schedule>
+		<train>065E</train>
+		<route>
+			<start_station>A</start_station>
+			<end_station>B</end_station>
+		</route>
+		<depart_time>2017-12-12T12:00:00</depart_time>
+		<travel_time>P2D</travel_time>
+	</schedule>
+</schedules>

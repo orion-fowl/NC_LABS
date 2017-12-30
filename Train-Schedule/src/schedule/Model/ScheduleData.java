@@ -1,6 +1,24 @@
 package schedule.Model;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Date;
+
+import javax.xml.XMLConstants;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Source;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+import schedule.utils.XMLValidator;
 
 public class ScheduleData {
 	private Train train;
@@ -47,7 +65,6 @@ public class ScheduleData {
 		return result;
 	}
 	public void add(String arg) {
-		System.out.println("ADD Received: "+arg);
 		// TODO
 	}
 	public void update(String old_data, String new_data) {
@@ -59,7 +76,6 @@ public class ScheduleData {
 		// TODO
 	}
 	public void addFrom(String path) {
-		System.out.println("ADD FROM Received: "+path);
-		// TODO
+		
 	}
 }
