@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employee>
+        <name>Ivan</name>
+        <surname>Petrov</surname>
+        <hiredate>2017-01-01 12:00</hiredate>
+    </employee>
+    <employee>
+        <name>Ivan</name>
+        <surname>Ivanov</surname>
+        <hiredate>2017-01-01 10:00</hiredate>
+    </employee>
+</employees>

@@ -1,4 +1,4 @@
-package schedule.utils;
+package com.vasilieva.schedule.utils;
 
 public class TableDrawer {
 	private int colNumber = 8;
@@ -9,14 +9,14 @@ public class TableDrawer {
 	public TableDrawer() {}
 	public void drawTable(String[][] data) {
 		defineColWitgh(data);
-		System.out.printf(rowFormat(), "Train ¹", "Start", "End", "Depart", "Travel time");
+		System.out.printf(rowFormat(), "Train ï¿½", "Start", "End", "Depart", "Travel time");
 		for (int i = 0; i < data.length; i++) {
 			System.out.printf(rowFormat(), data[i][0], data[i][1], data[i][2], data[i][3], data[i][4]);
 		}
 		
 	}
 	public void drawTable() {
-		System.out.printf(rowFormat(), "Train ¹", "Start", "End", "Depart", "Travel time");
+		System.out.printf(rowFormat(), "Train ï¿½", "Start", "End", "Depart", "Travel time");
 	}
 	private void defineColWitgh(String[][] data) {
 		for (int i = 0; i < data.length; i++) {

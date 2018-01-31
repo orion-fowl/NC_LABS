@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schedules>
+    <schedule>
+        <train>4446</train>
+        <start_station>Станция</start_station>
+        <end_station>Station two</end_station>
+        <depart_time>2017-03-03 22:22</depart_time>
+        <traverl_time>PT72H</traverl_time>
+    </schedule>
+    <schedule>
+        <train>4444</train>
+        <start_station>Station one</start_station>
+        <end_station>Station two</end_station>
+        <depart_time>2017-03-03 22:22</depart_time>
+        <traverl_time>PT72H</traverl_time>
+    </schedule>
+    <schedule>
+        <train>4445</train>
+        <start_station>Station one</start_station>
+        <end_station>Station two</end_station>
+        <depart_time>2017-03-03 22:22</depart_time>
+        <traverl_time>PT72H</traverl_time>
+    </schedule>
+    <schedule>
+        <train>4446</train>
+        <start_station>Station one</start_station>
+        <end_station>Station two</end_station>
+        <depart_time>2017-03-03 22:22</depart_time>
+        <traverl_time>PT72H</traverl_time>
+    </schedule>
+</schedules>

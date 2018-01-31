@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schedules>
+    <schedule>
+        <train>565</train>
+        <start_station>Station Two</start_station>
+        <end_station>Station Three</end_station>
+        <depart_time>2017-12-12 21:05</depart_time>
+        <travel_time>PT24H</travel_time>
+    </schedule>
+</schedules>
